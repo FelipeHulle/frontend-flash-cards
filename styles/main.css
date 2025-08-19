@@ -9,6 +9,11 @@ html {
     font-size: 62.5%
 }
 
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
 .container {
     width: 1200px;
     width: 70%;
@@ -29,6 +34,8 @@ html {
     flex-direction: column;
     gap: 2rem;
     background-color: #f4f4f4;
+    height: 500px;
+    justify-content: space-between;
 }
 
 .flashcard-footer {

@@ -27,6 +27,19 @@ const flashcards = [
 
 ]
 
+qtd_questions = flashcards.length
+
+function setFlashCards() {
+    let progressbarElem = document.getElementById('myBar')
+    let counterElem = document.getElementById('counter')
+    let percentage = 100/qtd_questions
+    progressbarElem.style.width = percentage + '%'
+    progressbarElem.innerText = Math.trunc(percentage) + '%'
+    counterElem.innerText = `1 de ${qtd_questions}`
+}
+
+setFlashCards()
+
 function changeFlashCards (arr) {
 
     const cardtextElem = document.getElementById('text')
@@ -42,6 +55,7 @@ function changeFlashCards (arr) {
     previousElem.addEventListener('click', () => {
         if (idx > 0) {
             idx--;
+            progressBar(idx+1)
         }
         cardtextElem.innerText = arr[idx].question
     })
@@ -49,6 +63,7 @@ function changeFlashCards (arr) {
     nextElem.addEventListener('click', () => {
         if (idx < (arrLen-1)) {
             idx++;
+            progressBar(idx+1)
         }
         cardtextElem.innerText = arr[idx].question
     })
@@ -69,4 +84,14 @@ function changeFlashCards (arr) {
 
 }
 
+function progressBar(idx) { 
+    let progressbarElem = document.getElementById('myBar')
+    let counterElem = document.getElementById('counter')
+    let percentage = 100/qtd_questions
+    progressbarElem.style.width = idx*percentage + '%'
+    progressbarElem.innerText = Math.trunc(idx*percentage) + '%'
+    counterElem.innerText = `${idx} de ${qtd_questions}`
+}
+
 changeFlashCards(flashcards)
+
