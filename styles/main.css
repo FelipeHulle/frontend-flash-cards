@@ -49,6 +49,10 @@ html {
 .flashcard-text {
     font-size: 2rem;
     text-align: center;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 #myProgress {

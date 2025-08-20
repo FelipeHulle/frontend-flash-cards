@@ -1,28 +1,24 @@
 const flashcards = [
 
     {
-        question: 'Qual primeiro nome do presidente',
-        answer: 'Lula'
+        question: 'What color is the sky',
+        answer: 'Sky Blue'
     },
     {
-        question: 'Qual presidente esta preso',
-        answer: 'Bozo'
+        question: 'What color is the ocean',
+        answer: 'Deep Blue'
     },
     {
-        question: 'Qual a cor do céu',
-        answer: 'Azul'
-    },
-    {
-        question: 'Quem é o maior do rio',
-        answer: 'Botafofo'
-    },
-    {
-        question: 'Qual meu nome',
+        question: 'Who am i?',
         answer: 'Felipe'
     },
     {
-        question: 'Qual Qual meu nQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomeQual meu nomemeu nome',
-        answer: 'Felipe'
+        question: 'What Year Is It?',
+        answer: '2025'
+    },
+    {
+        question: 'Which calendar we follow?',
+        answer: 'Gregorian Calendar'
     }
 
 ]
